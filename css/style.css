@@ -1,0 +1,280 @@
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+/* FONTS */
+@font-face {
+  font-family: "poppinslight";
+  src: url("../fonts/poppins-light-webfont.woff2") format("woff2"), url("../fonts/poppins-light-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "poppinslight_italic";
+  src: url("../fonts/poppins-lightitalic-webfont.woff2") format("woff2"), url("../fonts/poppins-lightitalic-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "poppinsmedium";
+  src: url("../fonts/poppins-medium-webfont.woff2") format("woff2"), url("../fonts/poppins-medium-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+#wrapper {
+  display: flex;
+  background-color: #B4C5E4;
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+  min-width: 330px;
+  min-height: 100vh;
+  flex-direction: column;
+  border-radius: 20px;
+  border: 0px solid white;
+  justify-content: space-between;
+}
+
+body {
+  background-color: #B4C5E4;
+}
+
+main {
+  margin: 0%;
+  text-align: center;
+}
+main h2 {
+  text-align: center;
+}
+main h1, main h3, main h5 {
+  color: #3C3744;
+}
+main h4 {
+  color: #3D52D5;
+}
+
+h1, h2, h3, h4, h5, p, ul, ol, a, li, label, button {
+  font-family: "poppinslight", Calibri, sans-serif;
+  color: #3C3744;
+}
+
+ul {
+  display: block;
+  list-style-image: url(../images/list-circle.png);
+}
+
+header {
+  background: #B4C5E4;
+  background-size: contain;
+  padding: 5px 20px;
+  border-radius: 20px;
+  border: 0px solid white;
+}
+
+section {
+  margin: 0px;
+  /* background-color: #618985;
+  border-radius: 20px; */
+  padding: 20px;
+}
+section #part1 {
+  margin: 10px;
+}
+section #part2 {
+  margin: 10px;
+}
+section h4 {
+  min-height: 32px;
+}
+
+.score-board {
+  justify-content: space-between;
+}
+
+footer {
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #3C3744;
+  text-align: center;
+  border-radius: 20px;
+  border: 0px solid white;
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+}
+footer h4 {
+  color: #FBFFF1;
+}
+
+#results {
+  background-color: lightcoral;
+  color: black;
+  border-radius: 20px;
+  border: 5px solid #F8F0E3;
+  padding: 10px;
+  border-width: 5px;
+  line-height: 25px;
+}
+
+img {
+  width: 60%;
+  height: auto;
+  margin: 0px;
+  padding: 2px;
+  min-width: 57px;
+}
+
+#profiles {
+  display: flex;
+  justify-content: space-around;
+}
+
+.gallery {
+  padding: 20px;
+  background-color: white;
+  margin: 0 auto 30px;
+  border-radius: 20px;
+  border: 5px solid #3C3744;
+  min-width: 143.97px;
+}
+
+#popup {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+  width: 200px;
+  background-color: #3D52D5;
+  border-radius: 15px;
+  border: 5px solid #3C3744;
+  padding: 10px;
+}
+#popup a {
+  padding-top: 8px;
+  color: #FBFFF1;
+}
+#popup p {
+  color: #FBFFF1;
+  padding-bottom: 8px;
+}
+#popup h3 {
+  color: #B4C5E4;
+}
+
+#popup-side {
+  display: flex;
+  justify-content: space-between;
+}
+
+#new-game, #roll-dice {
+  background-color: #3D52D5;
+  color: #FBFFF1;
+  padding: 5px;
+  border-radius: 3px;
+  width: 88px;
+}
+
+#new-game:hover, #roll-dice:hover {
+  background-color: #FBFFF1;
+  color: #090C9B;
+  cursor: pointer;
+}
+
+#close-pop-up {
+  text-shadow: 2px 2px #3D52D5;
+  font-weight: bold;
+}
+
+#close-pop-up:hover {
+  color: white;
+  font-weight: 800;
+  text-shadow: 2px 2px #090C9B;
+  cursor: pointer;
+}
+
+#buttons {
+  margin: 20px;
+}
+
+/* MEDIA QUERIES */
+@media screen and (min-width: 600px) {
+  section {
+    margin: 20px 10px 20px;
+  }
+  img {
+    width: 20%;
+    min-width: 66px;
+  }
+  #popup {
+    width: 300px;
+  }
+  body {
+    background-image: url("../images/cherry_blossoms.jpg");
+    background-size: cover;
+  }
+}
+@media screen and (min-width: 750px) {
+  nav ul {
+    display: flex;
+    justify-content: space-around;
+    list-style-image: url(../images/list-circle.png);
+  }
+  main {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  section {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  form {
+    padding: 10px;
+    width: 100%;
+    max-width: 250px;
+  }
+  form div {
+    padding: 20px;
+  }
+  a {
+    font-size: 1.3em;
+  }
+}
+@media screen and (min-width: 890px) {
+  a {
+    font-size: 1.4em;
+  }
+}
+/* SCRIPTS */
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  z-index: 99;
+  border: none;
+  outline: none;
+  background-color: #F2E3BC;
+  color: #414535;
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 10px;
+  font-size: 18px;
+}
+
+#myBtn:hover {
+  background-color: #555;
+  color: #F2E3BC;
+}
+
+.warning {
+  background-color: black;
+  padding: 30px;
+  border: none;
+  border-radius: 10px;
+}

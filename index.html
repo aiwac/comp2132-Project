@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+	<!-- author: Aiwa Cao	-->
+	<head>
+		<title>Project</title>
+		<meta charset="utf-8" />
+        <link href="css/style.css" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+		
+		<script src="scripts/jquery-3.4.1.min.js" defer></script>
+		<script src="scripts/project.js" defer></script>
+
+	</head>
+	<body>
+        <div id="wrapper">
+			<noscript>
+				<div class="warning"> 
+					<h2>JavaScript Is Disabled!</h2>
+					<p>This page requires JavaScript to run.</p>
+					<p>Please enable JavaScript in your browser then refresh this page.</p>				
+				</div>
+			</noscript>
+
+            <header>
+				<h1>COMP2132 Project</h1>
+			
+            </header>
+
+			<main>
+
+				<h2>Dice Game</h2>
+				<div id="profiles">
+					<section id="part1">
+						<div class="gallery">
+							<h3>You</h3>
+							<h4>Your Dice</h4>
+							<div id="you">
+								<img id="p1-first-dice" src="images/dice_1.png" alt="first-dice">
+								<img id="p1-second-dice" src="images/dice_1.png" alt="second-dice">
+							</div> 
+							<h4>Your Score</h4>
+							<section class="score-board">
+								<div>
+									<p>Score This Round:</p>
+									<p id="p1-score">0</p>
+								</div>
+								<div>
+									<p>Total Score:</p>
+									<p id="p1-total">0</p>
+								</div>
+							</section>
+						</div>
+					</section>
+					<section id="part2">
+						<div class="gallery">
+							<h3>Opponent</h3>
+							<h4>Opponent's Dice</h4>
+							<div id="opponent">
+								<img id="p2-first-dice" src="images/dice_1.png" alt="first-dice">
+								<img id="p2-second-dice" src="images/dice_1.png" alt="second-dice">
+							</div>
+							<h4>Opponent's Score</h4>
+							<section class="score-board">
+								<div>
+									<p>Score This Round:</p>
+									<p id="p2-score">0</p>
+								</div>
+								<div>
+									<p>Total Score:</p>
+									<p id="p2-total">0</p>
+								</div>
+							</section>
+						</div>
+					</section>
+				</div>
+
+				<div id="buttons">
+					<button id="new-game">New Game</button>
+					<button id="roll-dice">Roll Dice</button>
+					<div id="output"></div>  
+				</div>
+
+				<aside id="popup">
+					<div id="popup-side">
+						<h3>Game Over</h3>
+						<a id="close-pop-up">x</a>
+					</div>
+					<p id="game-over"></p>
+				</aside>    
+
+
+			</main>
+
+			<footer>
+				<h4>COMP2132</h4>
+			</footer>
+
+			<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+			
+        </div>
+	</body>
+</html>
